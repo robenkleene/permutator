@@ -11,6 +11,7 @@
 ,
 		"classnamespace" : "box",
 		"rect" : [ 328.0, 166.0, 970.0, 803.0 ],
+		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
 		"gridsize" : [ 8.0, 8.0 ],
@@ -41,7 +42,7 @@
 			}
  ],
 		"lines" : [  ],
-		"originid" : "pat-24422",
+		"originid" : "pat-24442",
 		"parameters" : 		{
 			"obj-1::obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
