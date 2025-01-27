@@ -33,13 +33,15 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 0.0, 0.0, 424.0, 328.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 424.0, 328.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [  ],
-		"originid" : "pat-24370",
+		"originid" : "pat-24422",
 		"parameters" : 		{
 			"obj-1::obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
@@ -62,9 +64,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "inspector_pathget_devices.js",
-				"bootpath" : "/Users/Shared/Max 9/Packages/inspector-pathget/javascript",
-				"patcherrelativepath" : "../../inspector-pathget/javascript",
+				"name" : "permutator_devices.js",
+				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
