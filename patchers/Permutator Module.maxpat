@@ -180,7 +180,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 111.0, 471.0, 150.0, 51.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Using a `umenu` instead of a `live.menu` because it's easier to dynamically change items."
 				}
 
@@ -219,13 +218,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 271.0, 287.0, 368.0, 20.0 ],
+					"patching_rect" : [ 271.0, 287.0, 126.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "inspector_pathget_devices.js",
+						"filename" : "permutator_devices.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js inspector_pathget_devices.js"
+					"text" : "js permutator_devices.js"
 				}
 
 			}
@@ -441,13 +440,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-4", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-5", 5 ]
 				}
@@ -474,15 +466,8 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
-		"originid" : "pat-24358",
+		"originid" : "pat-24418",
 		"parameters" : 		{
 			"obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
@@ -498,9 +483,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "inspector_pathget_devices.js",
-				"bootpath" : "/Users/Shared/Max 9/Packages/inspector-pathget/javascript",
-				"patcherrelativepath" : "../../inspector-pathget/javascript",
+				"name" : "permutator_devices.js",
+				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
