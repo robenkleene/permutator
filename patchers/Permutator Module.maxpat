@@ -32,18 +32,25 @@
 			}
 , 			{
 				"box" : 				{
+					"filename" : "permutator_parameters.js",
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.0, 352.0, 143.0, 20.0 ],
+					"patching_rect" : [ 496.0, 352.0, 146.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "permutator_parameters.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js permutator_parameters.js"
+					"text" : "v8 permutator_parameters.js",
+					"textfile" : 					{
+						"filename" : "permutator_parameters.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
 				}
 
 			}
@@ -190,18 +197,25 @@
 			}
 , 			{
 				"box" : 				{
+					"filename" : "permutator_devices.js",
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 271.0, 287.0, 126.0, 20.0 ],
+					"patching_rect" : [ 271.0, 287.0, 129.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "permutator_devices.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js permutator_devices.js"
+					"text" : "v8 permutator_devices.js",
+					"textfile" : 					{
+						"filename" : "permutator_devices.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
 				}
 
 			}
@@ -437,7 +451,7 @@
 
 			}
  ],
-		"originid" : "pat-58",
+		"originid" : "pat-68",
 		"parameters" : 		{
 			"obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
