@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 328.0, 166.0, 970.0, 803.0 ],
+		"rect" : [ 377.0, 126.0, 970.0, 803.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -42,7 +42,7 @@
 			}
  ],
 		"lines" : [  ],
-		"originid" : "pat-24442",
+		"originid" : "pat-24566",
 		"parameters" : 		{
 			"obj-1::obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
@@ -66,6 +66,13 @@
 			}
 , 			{
 				"name" : "permutator_devices.js",
+				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "permutator_parameters.js",
 				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",

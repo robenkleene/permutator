@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 181.0, 158.0, 875.0, 798.0 ],
+		"rect" : [ 87.0, 152.0, 875.0, 798.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -25,13 +25,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.0, 328.0, 132.0, 20.0 ],
+					"patching_rect" : [ 496.0, 328.0, 143.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "permutator_parameters",
+						"filename" : "permutator_parameters.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js permutator_parameters"
+					"text" : "js permutator_parameters.js"
 				}
 
 			}
@@ -183,13 +183,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 271.0, 287.0, 115.0, 20.0 ],
+					"patching_rect" : [ 271.0, 287.0, 126.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "permutator_devices",
+						"filename" : "permutator_devices.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js permutator_devices"
+					"text" : "js permutator_devices.js"
 				}
 
 			}
@@ -410,8 +410,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
-		"originid" : "pat-24448",
+		"originid" : "pat-24548",
 		"parameters" : 		{
 			"obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
