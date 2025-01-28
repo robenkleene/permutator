@@ -5,10 +5,10 @@ var liveObject = new LiveAPI("live_set");
 
 function msg_int(value) {
   liveObject.id = value;
-  var paramCount = liveObject.getcount("parameters");
+  var parameters = liveObject.children["parameters"];
   var parameterNames = [];
 
-  for (var i = 0; i < paramCount; i++) {
+  for (var i = 0; i < parameters.length; i++) {
     var parameterPath = "parameters " + i;
     var parameterName = liveObject.get(parameterPath + " name");
     parameterNames.push(parameterName);
