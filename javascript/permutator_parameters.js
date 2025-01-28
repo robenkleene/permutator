@@ -1,7 +1,7 @@
 inlets = 1;
 outlets = 1;
 
-var liveObject = new LiveAPI(callback, "live_set");
+var liveObject = new LiveAPI("live_set");
 
 function msg_int(value) {
   liveObject.id = value;
