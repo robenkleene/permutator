@@ -20,12 +20,24 @@
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 496.0, 320.0, 19.0, 20.0 ],
+					"text" : "t i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.0, 328.0, 143.0, 20.0 ],
+					"patching_rect" : [ 496.0, 352.0, 143.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "permutator_parameters.js",
 						"parameter_enable" : 0
@@ -41,7 +53,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 496.0, 408.0, 31.0, 20.0 ],
+					"patching_rect" : [ 496.0, 424.0, 31.0, 20.0 ],
 					"text" : "print"
 				}
 
@@ -384,7 +396,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -405,6 +417,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -418,7 +437,7 @@
 
 			}
  ],
-		"originid" : "pat-24548",
+		"originid" : "pat-58",
 		"parameters" : 		{
 			"obj-1" : [ "Scan", "Scan", 0 ],
 			"parameterbanks" : 			{
