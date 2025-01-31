@@ -3,13 +3,14 @@ outlets = 1;
 
 function anything() {
   var path = arrayfromargs(messagename, arguments).join(" ");
-  var liveObject = new LiveAPI(path);
-  var name = liveObject.get("name");
-  var parameters = liveObject.getcount("parameters");
+  var deviceObject = new LiveAPI(path);
+  var deviceName = deviceObject.get("name");
+  var parametersCount = deviceObject.getcount("parameters");
   var parameterNames = [];
-  for (var i = 0; i < parameters.length; i++) {
-    var parameterPath = "parameters " + i;
-    var parameterName = liveObject.get(parameterPath + " name");
+  for (var i = 0; i < parametersCount; i++) {
+    var parameterPath = path + " parameters " + i;
+    var parameterObject = new LiveAPI(parameterPath);
+    var parameterName = parameterObject.get("name");
     parameterNames.push(parameterName);
   }
 
