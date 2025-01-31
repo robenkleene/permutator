@@ -11,7 +11,7 @@ function anything() {
     var parameterPath = path + " parameters " + i;
     var parameterObject = new LiveAPI(parameterPath);
     var parameterName = parameterObject.get("name");
-    parameterNames.push(parameterName);
+    parameterNames.push(String(parameterName));
   }
 
   outlet(0, parameterNames);
