@@ -1,13 +1,13 @@
 inlets = 1;
 outlets = 1;
 
-var liveObject = new LiveAPI("live_set");
+function anything() {
+  var path = arrayfromargs(messagename, arguments).join(" ");
+  var liveObject = new LiveAPI(value);
+  var name = liveObject.get("name");
+  var parameters = liveObject.get("parameters");
 
-function msg_int(value) {
-  liveObject.id = value;
-  var parameters = liveObject.children["parameters"];
   var parameterNames = [];
-
   for (var i = 0; i < parameters.length; i++) {
     var parameterPath = "parameters " + i;
     var parameterName = liveObject.get(parameterPath + " name");
