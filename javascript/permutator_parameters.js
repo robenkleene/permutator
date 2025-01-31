@@ -3,10 +3,9 @@ outlets = 1;
 
 function anything() {
   var path = arrayfromargs(messagename, arguments).join(" ");
-  var liveObject = new LiveAPI(value);
+  var liveObject = new LiveAPI(path);
   var name = liveObject.get("name");
-  var parameters = liveObject.get("parameters");
-
+  var parameters = liveObject.getcount("parameters");
   var parameterNames = [];
   for (var i = 0; i < parameters.length; i++) {
     var parameterPath = "parameters " + i;
