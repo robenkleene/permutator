@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 87.0, 152.0, 1236.0, 798.0 ],
+		"rect" : [ 583.0, 264.0, 1236.0, 798.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -19,6 +19,31 @@
 		"objectsnaponopen" : 0,
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-18",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 304.0, 0.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 304.0, 48.0, 62.0, 20.0 ],
+					"text" : "select scan"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
@@ -53,7 +78,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 496.0, 496.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.0, 48.0, 100.0, 20.0 ]
+					"presentation_rect" : [ 0.0, 24.0, 152.0, 20.0 ]
 				}
 
 			}
@@ -119,37 +144,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "live.text",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 255.0, 47.0, 44.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 23.0, 23.0, 44.0, 15.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "Scan",
-							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
-							"parameter_shortname" : "Scan",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "Scan",
-					"texton" : "Scan",
-					"varname" : "Scan"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -207,7 +201,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 271.0, 471.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.0, 24.0, 152.0, 20.0 ]
+					"presentation_rect" : [ 0.0, 0.0, 152.0, 20.0 ]
 				}
 
 			}
@@ -326,13 +320,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
@@ -384,6 +371,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-16", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -500,21 +501,7 @@
 
 			}
  ],
-		"originid" : "pat-114",
-		"parameters" : 		{
-			"obj-1" : [ "Scan", "Scan", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
+		"originid" : "pat-142",
 		"dependency_cache" : [ 			{
 				"name" : "permutator_devices.js",
 				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/javascript",
