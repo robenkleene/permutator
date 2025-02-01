@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 583.0, 264.0, 1236.0, 798.0 ],
+		"rect" : [ 564.0, 210.0, 934.0, 798.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -19,6 +19,30 @@
 		"objectsnaponopen" : 0,
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-23",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Permutator Min-Max Dial.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 232.0, 48.0, 89.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 152.0, 0.0, 89.0, 48.0 ],
+					"varname" : "Permutator Min-Max Dial",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-18",
@@ -502,7 +526,29 @@
 			}
  ],
 		"originid" : "pat-142",
+		"parameters" : 		{
+			"obj-23::obj-1" : [ "0-Min", "0Min", 0 ],
+			"obj-23::obj-2" : [ "0-Max", "0Max", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
+				"name" : "Permutator Min-Max Dial.maxpat",
+				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "permutator_devices.js",
 				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/javascript",
 				"patcherrelativepath" : "../javascript",
