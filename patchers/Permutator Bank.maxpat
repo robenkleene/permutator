@@ -78,7 +78,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 568.0, 136.0, 304.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 24.0, 240.0, 72.0 ],
+					"presentation_rect" : [ 0.0, 24.0, 280.0, 48.0 ],
 					"varname" : "Permutator Module",
 					"viewvisibility" : 1
 				}
@@ -100,16 +100,28 @@
 
 			}
  ],
-		"originid" : "pat-4",
+		"originid" : "pat-160",
 		"parameters" : 		{
-			"obj-1::obj-23::obj-1" : [ "0-Min", "0Min", 0 ],
-			"obj-1::obj-23::obj-2" : [ "0-Max", "0Max", 0 ],
+			"obj-1::obj-1" : [ "1_Steps", "1_Steps", 0 ],
+			"obj-1::obj-23::obj-1" : [ "0-Min", "1_Min", 0 ],
+			"obj-1::obj-23::obj-2" : [ "0-Max", "1_Max", 0 ],
 			"obj-2" : [ "Scan[1]", "Scan", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
 					"name" : "",
 					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-1::obj-23::obj-1" : 				{
+					"parameter_longname" : "0-Min"
+				}
+,
+				"obj-1::obj-23::obj-2" : 				{
+					"parameter_longname" : "0-Max"
 				}
 
 			}
