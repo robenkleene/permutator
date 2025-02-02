@@ -20,13 +20,36 @@
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 624.0, 408.0, 82.0, 20.0 ],
+					"text" : "print parameter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 528.0, 312.0, 19.0, 20.0 ],
+					"text" : "t i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "live.dial",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 320.0, 80.0, 41.0, 48.0 ],
+					"patching_rect" : [ 560.0, 40.0, 41.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 0.0, 41.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
@@ -62,7 +85,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 232.0, 48.0, 89.0, 48.0 ],
+					"patching_rect" : [ 464.0, 40.0, 89.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 152.0, 0.0, 89.0, 48.0 ],
 					"varname" : "Permutator Min-Max Dial",
@@ -164,8 +187,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 496.0, 352.0, 146.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
@@ -449,6 +472,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -479,6 +509,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -547,13 +584,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
-		"originid" : "pat-28",
+		"originid" : "pat-206",
 		"parameters" : 		{
 			"obj-1" : [ "1_Steps", "1_Steps", 0 ],
 			"obj-23::obj-1" : [ "0-Min", "1_Min", 0 ],
