@@ -78,7 +78,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 568.0, 136.0, 304.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 24.0, 408.0, 72.0 ],
+					"presentation_rect" : [ 0.0, 24.0, 240.0, 72.0 ],
+					"varname" : "Permutator Module",
 					"viewvisibility" : 1
 				}
 
@@ -99,8 +100,10 @@
 
 			}
  ],
-		"originid" : "pat-138",
+		"originid" : "pat-4",
 		"parameters" : 		{
+			"obj-1::obj-23::obj-1" : [ "0-Min", "0Min", 0 ],
+			"obj-1::obj-23::obj-2" : [ "0-Max", "0Max", 0 ],
 			"obj-2" : [ "Scan[1]", "Scan", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -115,6 +118,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Permutator Min-Max Dial.maxpat",
+				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Permutator Module.maxpat",
 				"bootpath" : "/Users/Shared/Max 9/Packages/permutator/patchers",
 				"patcherrelativepath" : ".",
