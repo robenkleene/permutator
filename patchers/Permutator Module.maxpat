@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 564.0, 210.0, 934.0, 798.0 ],
+		"rect" : [ 289.0, 100.0, 934.0, 798.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontname" : "Arial Bold",
@@ -20,6 +20,34 @@
 		"subpatcher_template" : "roben-kleene-max-for-live",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 320.0, 80.0, 41.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 240.0, 0.0, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "1_Steps",
+							"parameter_modmode" : 3,
+							"parameter_osc_name" : "<default>",
+							"parameter_shortname" : "1_Steps",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "1_Steps"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "1_", "1_" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -525,15 +553,27 @@
 
 			}
  ],
-		"originid" : "pat-142",
+		"originid" : "pat-28",
 		"parameters" : 		{
-			"obj-23::obj-1" : [ "0-Min", "0Min", 0 ],
-			"obj-23::obj-2" : [ "0-Max", "0Max", 0 ],
+			"obj-1" : [ "1_Steps", "1_Steps", 0 ],
+			"obj-23::obj-1" : [ "0-Min", "1_Min", 0 ],
+			"obj-23::obj-2" : [ "0-Max", "1_Max", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
 					"name" : "",
 					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-23::obj-1" : 				{
+					"parameter_longname" : "0-Min"
+				}
+,
+				"obj-23::obj-2" : 				{
+					"parameter_longname" : "0-Max"
 				}
 
 			}
